@@ -1,1 +1,15 @@
-@import './normalize';
+@import './normalize.scss';
+
+body {
+  min-width: 320px;
+  font-family: Roboto, Arial, Helvetica, serif;
+  font-size: 15px;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@import './blocks/header.scss';

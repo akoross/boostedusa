@@ -43,8 +43,10 @@ ol[class] {
 }
 
 /* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
+a {
   text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: inherit;
 }
 
 /* Упрощаем работу с изображениями */

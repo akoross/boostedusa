@@ -1,0 +1,177 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none; }
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  text-decoration: none;
+  color: inherit; }
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block; }
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em; }
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+body {
+  min-width: 320px;
+  font-family: Roboto, Arial, Helvetica, serif;
+  font-size: 15px; }
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.header__top {
+  background: #000;
+  padding: 7px 0;
+  font-size: 12px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #fbfbfb; }
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative; }
+  .header__container.container {
+    max-width: 1440px;
+    padding: 15px 24px 15px 11px; }
+
+.header__user-body > *:not(:last-child) {
+  margin-right: 5px; }
+
+.header__user-avatar, .header__user-cart {
+  cursor: pointer; }
+  @media (max-width: 768px) {
+    .header__user-avatar, .header__user-cart {
+      width: 25px;
+      height: 25px; } }
+
+.nav-header {
+  padding: 0 20px;
+  position: relative; }
+  @media (max-width: 768px) {
+    .nav-header {
+      width: 100%;
+      padding: 0;
+      position: absolute;
+      top: 20px;
+      left: 0; }
+      .nav-header__icon {
+        width: 30px;
+        height: 20px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 0;
+        right: 100px;
+        transition: rotate 2s ease 0.3s; }
+        .nav-header__icon::before, .nav-header__icon::after,
+        .nav-header__icon span {
+          width: 100%;
+          border: 1px solid #000; }
+        .nav-header__icon::before, .nav-header__icon::after {
+          content: '';
+          position: absolute;
+          transition: transform 0.2s ease; }
+        .nav-header__icon::before {
+          top: 0; }
+        .nav-header__icon::after {
+          bottom: 0; }
+        .nav-header__icon span {
+          display: block; }
+        .nav-header__icon.active::before {
+          top: 50%;
+          transform: rotate(45deg) translateY(-50%); }
+        .nav-header__icon.active::after {
+          bottom: 50%;
+          transform: rotate(-45deg) translateY(50%); }
+        .nav-header__icon.active span {
+          border: none; } }
+  .nav-header__list {
+    display: flex;
+    flex-wrap: wrap; }
+    @media (max-width: 768px) {
+      .nav-header__list {
+        display: none; }
+        .nav-header__list.active {
+          background: rgba(0, 0, 0, 0.6);
+          padding: 15px 0;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          width: 100%;
+          left: 0;
+          top: 45px; }
+          .nav-header__list.active > *:not(:last-child) {
+            margin-bottom: 15px; } }
+  .nav-header__item:not(:last-child) {
+    margin-right: 22px; }
+  @media (max-width: 768px) {
+    .nav-header__item {
+      padding: 0 20px; }
+      .nav-header__item:not(:last-child) {
+        margin-right: 0; } }
+  .nav-header__link {
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000; }
+    @media (max-width: 768px) {
+      .nav-header__link {
+        font-size: 24px; } }
+    .nav-header__link:hover {
+      text-decoration: underline; }
