@@ -1,0 +1,113 @@
+.webp .welcome {
+  @media (min-resolution: 2dppx) {
+    background: url(../img/welcome@2.webp) no-repeat center;
+    background-size: cover;
+  }
+  background: url(../img/welcome@1.webp) no-repeat center;
+  background-size: cover;
+}
+
+.welcome {
+  padding: 53px 0 618px;
+  @media (min-resolution: 2dppx) {
+    background: url(../img/welcome@2.jpg) no-repeat center;
+    background-size: cover;
+  }
+  background: url(../img/welcome@1.jpg) no-repeat center;
+  background-size: cover;
+
+  @media (max-width: 1200px) {
+    padding: 53px 0 418px;
+  }
+
+  @media (max-width: 880px) {
+    padding: 53px 0 218px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 0 180px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 30px 0 50px;
+  }
+  // .welcome__container
+
+  &__container {
+  }
+
+  // .welcome__body
+
+  &__body {
+  }
+
+  // .welcome__title
+
+  &__title {
+    font-size: 44px;
+    line-height: 51/44 * 100%;
+    text-align: center;
+    color: #000000;
+    margin: 0 0 14px 0;
+
+    @media (max-width: 768px) {
+      font-size: 36px;
+    }
+  }
+
+  // .welcome__text
+
+  &__text {
+    font-size: 15px;
+    line-height: 19/15 * 100%;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #000000;
+    margin: 0 0 22px 0;
+  }
+
+  // .welcome__buttons
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > *:not(:last-child) {
+      margin: 0 12px 0 0;
+
+      @media (max-width: 460px) {
+        //   flex-wrap: nowrap;
+        flex-direction: column;
+        margin: 0 0 20px 0;
+      }
+    }
+  }
+
+  // .welcome__button
+
+  &__button {
+    //  flex: 0 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 201px;
+    padding: 5px;
+    background: #ff4a32;
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 22/15 * 100%;
+    text-align: center;
+    color: #ffffff;
+    transition: all 0.1s ease 0.1s;
+
+    @media (max-width: 460px) {
+      flex: 0 0 100%;
+    }
+
+    &:hover {
+      background: #ca3b28;
+    }
+  }
+}

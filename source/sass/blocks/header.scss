@@ -48,6 +48,8 @@
   // .header__user-body
 
   &__user-body {
+    display: flex;
+    align-items: center;
     & > *:not(:last-child) {
       margin-right: 5px;
     }
@@ -84,7 +86,7 @@
       position: absolute;
       display: flex;
       align-items: center;
-      top: 0;
+      top: 3px;
       right: 100px;
       // transform: translateX(50%);
       transition: rotate 2s ease 0.3s;
