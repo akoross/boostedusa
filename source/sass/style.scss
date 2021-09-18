@@ -1,0 +1,24 @@
+@import './normalize';
+
+body .lock {
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1110px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import './blocks/header.scss';
+@import './blocks/page.scss';
+@import './blocks/design.scss';
+@import './blocks/aboutus.scss';
+@import './blocks/static.scss';
+@import './blocks/skils.scss';
+@import './blocks/me-work.scss';
+@import './blocks/projects.scss';
+@import './blocks/clients.scss';
+@import './blocks/order.scss';
+@import './blocks/footer.scss';

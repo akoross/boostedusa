@@ -1,0 +1,139 @@
+.order {
+  padding: 100px 0;
+  min-width: 320px;
+
+  @media (max-width: 520px) {
+    padding: 50px 0;
+  }
+  // .order__container
+
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+
+  // .order__body
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 540px;
+    text-align: center;
+
+    & > *:not(:last-child) {
+      margin: 0 0 50px 0;
+
+      @media (max-width: 520px) {
+        margin: 0 0 30px 0;
+      }
+    }
+  }
+
+  // .order__title
+
+  &__title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37 / 32 * 100%;
+    color: #000000;
+  }
+
+  // .order__text
+
+  &__text {
+    font-size: 16px;
+    line-height: 26/16 * 100%;
+    text-align: center;
+    color: #727272;
+    padding: 0 0 15px 0;
+  }
+
+  // .order__form
+
+  &__form {
+  }
+}
+
+.form-order {
+  // .form-order__body
+
+  &__body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  // .form-order__name
+
+  &__name {
+    flex: 0 1 47.22%;
+    padding: 17px 20px;
+    font-size: 14px;
+    line-height: 23/14 * 100%;
+    color: #5f5d5d;
+    border: none;
+    outline: none;
+
+    @media (max-width: 520px) {
+      flex: 0 1 100%;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  // .form-order__email
+
+  &__email {
+    flex: 0 1 47.22%;
+    padding: 17px 20px;
+    font-size: 14px;
+    line-height: 23/14 * 100%;
+    color: #5f5d5d;
+    border: none;
+    outline: none;
+
+    @media (max-width: 520px) {
+      flex: 0 1 100%;
+    }
+  }
+
+  // .form-order__text
+
+  &__text {
+    flex: 0 0 100%;
+    margin: 20px 0 0 0;
+    height: 175px;
+    padding: 17px 20px;
+    font-size: 14px;
+    line-height: 23/14 * 100%;
+    color: #5f5d5d;
+    border: none;
+    outline: none;
+    resize: none;
+  }
+
+  // .form-order__submit
+
+  &__submit {
+    flex: 0 0 190px;
+    margin: 50px auto 0 auto;
+    background: #34547a;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 23/14 * 100%;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.15em;
+    color: #ffffff;
+    cursor: pointer;
+
+    @media (max-width: 420px) {
+      flex: 0 0 100%;
+    }
+
+    &:hover {
+      background: #213752;
+    }
+  }
+}
