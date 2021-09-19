@@ -4,13 +4,13 @@ if (navIcon) {
   const navList = document.querySelector('.nav-header__list');
   navIcon.addEventListener('click', () => {
     document.body.classList.toggle('lock');
-    navIcon.classList.toggle('active');
-    navList.classList.toggle('active');
+    navIcon.classList.toggle('nav-header__icon--active');
+    navList.classList.toggle('nav-header__list--active');
   });
   navHeaderLinks.forEach((link) => {
     link.addEventListener('click', () => {
-      navIcon.classList.toggle('active');
-      navList.classList.toggle('active');
+      navIcon.classList.toggle('nav-header__icon--active');
+      navList.classList.toggle('nav-header__list--active');
     });
   });
 }

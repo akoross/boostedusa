@@ -1,0 +1,32 @@
+.trademarks {
+  padding: 3px 0 2px 0;
+  background: #000;
+
+  // .trademarks__container
+
+  &__container {
+  }
+
+  // .trademarks__list
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  // .trademarks__item
+
+  &__item {
+    padding: 15px;
+  }
+
+  // .trademarks__link
+
+  &__link {
+    &:hover img {
+      opacity: 0.6;
+    }
+  }
+}

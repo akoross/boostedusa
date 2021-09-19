@@ -117,7 +117,7 @@
         display: block;
       }
 
-      &.active {
+      &--active {
         &::before {
           top: 50%;
           transform: rotate(45deg) translateY(-50%);
@@ -144,9 +144,9 @@
     @media (max-width: 768px) {
       display: none;
 
-      &.active {
-        background: rgba($color: #000000, $alpha: 0.6);
-        padding: 15px 0;
+      &--active {
+        background: rgba($color: #000000, $alpha: 0.8);
+        padding: 5px 0;
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -155,7 +155,8 @@
         top: 45px;
 
         & > *:not(:last-child) {
-          margin-bottom: 15px;
+          margin-bottom: 0;
+          box-shadow: 0 1px 0 #fbfbfb;
         }
       }
     }
@@ -171,7 +172,8 @@
       &:not(:last-child) {
         margin-right: 0;
       }
-      padding: 0 20px;
+      padding: 10px 20px;
+      justify-self: center;
     }
   }
 
@@ -183,7 +185,11 @@
     color: #000000;
 
     @media (max-width: 768px) {
-      font-size: 24px;
+      font-size: 18px;
+      color: #fbfbfb;
+      display: block;
+      width: 100%;
+      height: 100%;
     }
 
     &:hover {

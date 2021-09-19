@@ -2,9 +2,17 @@
   @media (min-resolution: 2dppx) {
     background: url(../img/welcome@2.webp) no-repeat center;
     background-size: cover;
+
+    @media (min-width: 1440px) {
+      background-position: bottom;
+    }
   }
   background: url(../img/welcome@1.webp) no-repeat center;
   background-size: cover;
+
+  @media (min-width: 1440px) {
+    background-position: bottom;
+  }
 }
 
 .welcome {
@@ -12,9 +20,17 @@
   @media (min-resolution: 2dppx) {
     background: url(../img/welcome@2.jpg) no-repeat center;
     background-size: cover;
+
+    @media (min-width: 1440px) {
+      background-position: bottom;
+    }
   }
   background: url(../img/welcome@1.jpg) no-repeat center;
   background-size: cover;
+
+  @media (min-width: 1440px) {
+    background-position: bottom;
+  }
 
   @media (max-width: 1200px) {
     padding: 53px 0 418px;
