@@ -1,0 +1,138 @@
+.offers {
+  .container {
+    max-width: none;
+    padding: 0 10px;
+  }
+
+  padding: 30px 0 8px 0;
+  // .offers__container
+
+  &__container {
+    display: grid;
+    grid-template-rows: repeat (auto-fit, minmax(186px, 1fr));
+    gap: 40px;
+  }
+
+  &__shadow-block {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 0px 10px rgba(41, 44, 61, 0.34);
+  }
+
+  // .offers__title
+
+  &__title {
+    position: relative;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36/32 * 100%;
+    text-align: center;
+    padding-bottom: 22px;
+
+    &::after {
+      content: '';
+      width: 70px;
+      border: 1px solid #cfcfcf;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  // .offers__slider
+
+  &__slider {
+  }
+}
+
+.slider-offers {
+  // .slider-offers__list
+
+  &__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+
+    & > *:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  // .slider-offers__item
+
+  &__item {
+  }
+
+  // .slider-offers__link
+
+  &__link {
+  }
+
+  // .slider-offers__button--left
+
+  &__button--left {
+  }
+
+  // .slider-offers__button--right
+
+  &__button--right {
+  }
+}
+.offer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & > *:not(:last-child) {
+    margin-bottom: 5px;
+  }
+
+  // .offer-link__image
+
+  &__image {
+  }
+
+  // .offer-link__name
+
+  &__name {
+    justify-self: flex-end;
+    max-width: 140px;
+    line-height: 18/15 * 100%;
+    text-align: center;
+    color: #ff4a32;
+  }
+
+  // .offer-link__price
+
+  &__price {
+    font-size: 14px;
+    line-height: 18/14 * 100%;
+  }
+
+  // .offer-link__price--normal
+
+  &__price--normal {
+    color: #373737;
+  }
+
+  // .offer-link__price--old
+
+  &__price--old {
+    color: #ff2121;
+  }
+
+  // .offer-link__price--sold
+
+  &__price--sold {
+    line-height: 15/18 * 100%;
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  // .offer-link__price--uppgrade
+
+  &__price--uppgrade {
+  }
+}

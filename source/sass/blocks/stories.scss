@@ -1,5 +1,5 @@
 .stories {
-  padding: 45px 0 20px;
+  padding: 45px 0;
 
   @media (max-width: 900px) {
     .container {
@@ -40,6 +40,13 @@
     flex: 0 1 100%;
     padding: 0 20px;
     align-self: center;
+
+    @media (max-width: 900px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   // .stories__article
@@ -61,6 +68,9 @@
   &__text {
     margin-bottom: 18px;
     line-height: 22/15 * 100%;
+    @media (max-width: 900px) {
+      max-width: 590px;
+    }
   }
 
   // .stories__link
@@ -78,6 +88,10 @@
     color: #ffff;
     border-radius: 35px;
     transition: background-color 0.1s ease 0.1s;
+
+    @media (max-width: 900px) {
+      min-width: 200px;
+    }
 
     &:hover {
       background-color: #d13d29;

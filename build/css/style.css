@@ -443,7 +443,7 @@ body {
       background-color: #d13d29; }
 
 .stories {
-  padding: 45px 0 20px; }
+  padding: 45px 0; }
   @media (max-width: 900px) {
     .stories .container {
       padding: 0; } }
@@ -465,6 +465,12 @@ body {
     flex: 0 1 100%;
     padding: 0 20px;
     align-self: center; }
+    @media (max-width: 900px) {
+      .stories__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
   .stories__title {
     font-size: 32px;
     line-height: 118.75%;
@@ -473,6 +479,9 @@ body {
   .stories__text {
     margin-bottom: 18px;
     line-height: 146.66667%; }
+    @media (max-width: 900px) {
+      .stories__text {
+        max-width: 590px; } }
   .stories__link {
     line-height: 146.66667%;
     display: flex;
@@ -488,6 +497,9 @@ body {
     color: #ffff;
     border-radius: 35px;
     transition: background-color 0.1s ease 0.1s; }
+    @media (max-width: 900px) {
+      .stories__link {
+        min-width: 200px; } }
     .stories__link:hover {
       background-color: #d13d29; }
 
@@ -521,3 +533,135 @@ body {
       left: 0;
       width: 100%;
       height: 100%; }
+
+.categories .container {
+  padding: 0;
+  max-width: none; }
+
+.categories__list {
+  display: flex;
+  flex-wrap: wrap; }
+
+.categories__item {
+  flex: 0 1 33.33%;
+  position: relative; }
+  @media (max-width: 860px) {
+    .categories__item {
+      flex: 0 1 100%; } }
+
+.categories__link:hover .categories__image {
+  opacity: 0.8; }
+
+.categories__link:hover .categories__name {
+  text-decoration: underline; }
+
+.categories__image {
+  position: relative;
+  padding: 0 0 90.9% 0; }
+  .categories__image img {
+    position: absolute;
+    -o-object-fit: cover;
+       object-fit: cover;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.categories__body {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff; }
+
+.categories__name {
+  font-size: 25px;
+  line-height: 120%;
+  margin: 0 0 15px 0; }
+
+.categories__text {
+  font-size: 18px;
+  line-height: 127.77778%;
+  text-transform: uppercase; }
+
+.video-review {
+  padding: 45px 0 25px 0; }
+  .video-review__list {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); }
+  .video-review__video {
+    position: relative;
+    padding: 0 0 56% 0; }
+    .video-review__video video {
+      position: absolute;
+      -o-object-fit: cover;
+         object-fit: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
+.offers {
+  padding: 30px 0 8px 0; }
+  .offers .container {
+    max-width: none;
+    padding: 0 10px; }
+  .offers__container {
+    display: grid;
+    grid-template-rows: repeat auto-fit, minmax(186px, 1fr);
+    gap: 40px; }
+  .offers__shadow-block {
+    height: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 0px 10px rgba(41, 44, 61, 0.34); }
+  .offers__title {
+    position: relative;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 112.5%;
+    text-align: center;
+    padding-bottom: 22px; }
+    .offers__title::after {
+      content: '';
+      width: 70px;
+      border: 1px solid #cfcfcf;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%); }
+
+.slider-offers__list {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center; }
+  .slider-offers__list > *:not(:last-child) {
+    margin-right: 20px; }
+
+.offer-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .offer-link > *:not(:last-child) {
+    margin-bottom: 5px; }
+  .offer-link__name {
+    justify-self: flex-end;
+    max-width: 140px;
+    line-height: 120%;
+    text-align: center;
+    color: #ff4a32; }
+  .offer-link__price {
+    font-size: 14px;
+    line-height: 128.57143%; }
+  .offer-link__price--normal {
+    color: #373737; }
+  .offer-link__price--old {
+    color: #ff2121; }
+  .offer-link__price--sold {
+    line-height: 83.33333%;
+    color: rgba(0, 0, 0, 0.3); }

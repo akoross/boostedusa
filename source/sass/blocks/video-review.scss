@@ -1,0 +1,38 @@
+.video-review {
+  padding: 45px 0 25px 0;
+  // .video-review__container
+
+  &__container {
+  }
+
+  // .video-review__list
+
+  &__list {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
+
+  // .video-review__item
+
+  &__item {
+  }
+
+  //   .video-review__video
+
+  &__video {
+    position: relative;
+    padding: 0 0 56% 0;
+
+    & video {
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+//56.296
