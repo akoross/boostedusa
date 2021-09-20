@@ -136,7 +136,8 @@ body {
         .nav-header__icon::after {
           bottom: 0; }
         .nav-header__icon span {
-          display: block; }
+          display: block;
+          cursor: pointer; }
         .nav-header__icon--active::before {
           top: 50%;
           transform: rotate(45deg) translateY(-50%); }
