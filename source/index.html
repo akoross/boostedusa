@@ -2,436 +2,583 @@
 <html class="page" lang="ru">
 
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>BOOSTEDusa</title>
-	<link rel="stylesheet" href="./css/style.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BOOSTEDusa</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/style.min.css">
 </head>
 
 <body>
 
-	<header class="header">
-		<div class="header__top">
-			<span>Financing option available at checkout.</span>
-		</div>
-		<div class="header__container container">
-			<div class="header__logo">
-				<a href="#" class="header__logo-link">
-					<img src="./img/logo-header.svg" alt="Logotip" width="160" height="36">
-				</a>
-			</div>
-			<nav class="header__nav nav-header">
-				<div class="nav-header__icon">
-					<span></span>
-				</div>
-				<ul class="nav-header__list">
-					<li class="nav-header__item">
-						<a href="" class="nav-header__link">Electric Skateboards</a>
-					</li>
-					<li class="nav-header__item">
-						<a href="" class="nav-header__link">Electric Scooters</a>
-					</li>
-					<li class="nav-header__item">
-						<a href="" class="nav-header__link">Accessories</a>
-					</li>
-					<li class="nav-header__item">
-						<a href="" class="nav-header__link">Gift Card</a>
-					</li>
-					<li class="nav-header__item">
-						<a href="" class="nav-header__link">More Info</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="header__user">
-				<div class="header__user-body">
-					<svg class="header__user-avatar" width="17" height="17" viewBox="0 0 20 21" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<use xlink:href="./img/sprite.svg#avatar"></use>
-					</svg>
-					<svg class="header__user-cart" width="17" height="14" viewBox="0 0 20 21" fill="none"
-						xmlns="http://www.w3.org/2000/svg">
-						<use xlink:href="./img/sprite.svg#cart"></use>
-					</svg>
-				</div>
-			</div>
-		</div>
-	</header>
+  <header class="header">
+    <div class="header__top">
+      <span>Financing option available at checkout.</span>
+    </div>
+    <div class="header__container container">
+      <div class="header__logo">
+        <a href="#" class="header__logo-link">
+          <img src="./img/logo-header.svg" alt="Logotip" width="160" height="36">
+        </a>
+      </div>
+      <nav class="header__nav nav-header">
+        <div class="nav-header__icon">
+          <span></span>
+        </div>
+        <ul class="nav-header__list">
+          <li class="nav-header__item">
+            <a href="" class="nav-header__link">Electric Skateboards</a>
+          </li>
+          <li class="nav-header__item">
+            <a href="" class="nav-header__link">Electric Scooters</a>
+          </li>
+          <li class="nav-header__item">
+            <a href="" class="nav-header__link">Accessories</a>
+          </li>
+          <li class="nav-header__item">
+            <a href="" class="nav-header__link">Gift Card</a>
+          </li>
+          <li class="nav-header__item">
+            <a href="" class="nav-header__link">More Info</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__user">
+        <div class="header__user-body">
+          <svg class="header__user-avatar" width="17" height="17" viewBox="0 0 20 21" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#avatar"></use>
+          </svg>
+          <svg class="header__user-cart" width="17" height="14" viewBox="0 0 20 21" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <use xlink:href="./img/sprite.svg#cart"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </header>
 
-	<main class="page">
-		<section class="page__welcome welcome">
-			<div class="welcome__container container">
-				<div class="welcome__body">
-					<h1 class="welcome__title">Welcome to Boosted USA</h1>
-					<p class="welcome__text">The Holy Grail of Electric Skateboards and One REVolutionary Scooter</p>
-					<div class="welcome__buttons">
-						<a href="#" class="welcome__button">BOOSTED REVS</a>
-						<a href="#" class="welcome__button">BOOSTED BOARDS</a>
-					</div>
-				</div>
-			</div>
-		</section>
-		<div class="page__trademarks trademarks">
-			<div class="trademarks__container container">
-				<ul class="trademarks__list">
-					<li class="trademarks__item">
-						<a href="#" class="trademarks__link">
-							<img src="./img/electrek.svg" alt="Electrek" width="150" height="31">
-						</a>
-					</li>
-					<li class="trademarks__item">
-						<a href="#" class="trademarks__link">
-							<img src="./img/techcrunch.svg" alt="Tech Crunch" width="206" height="48">
-						</a>
-					</li>
-					<li class="trademarks__item">
-						<a href="#" class="trademarks__link">
-							<img src="./img/popular-mechnics.svg" alt="Popular Mechnics" width="150" height="41">
-						</a>
-					</li>
-					<li class="trademarks__item">
-						<a href="#" class="trademarks__link">
-							<img src="./img/wired.svg" alt="Wired" width="158" height="33">
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<section class="page__looking-for looking-for">
-			<div class="looking-for__container container">
-				<div class="looking-for__body">
-					<h3 class="looking-for__title">Looking for Boosted Boards, or Boosted Revs?</h3>
-					<p class="looking-for__text">Boosted USA acquired all of the remaining inventory directly from Boosted.
-						This means we have the electric skateboards and scooter you all love and have been looking for. Get
-						your hands on these highly sought after products while supplies last.</p>
-					<div class="looking-for__line"></div>
-				</div>
-				<ul class="looking-for__list">
-					<li class="looking-for__item">
-						<a href="#" class="looking-for__link link-looking-for">
-							<div class="link-looking-for__image">
-								<picture>
-									<source type="image/webp" srcset="./img/boards@1.webp 1x,
+  <main class="page">
+    <section class="page__welcome welcome">
+      <div class="welcome__container container">
+        <div class="welcome__body">
+          <h1 class="welcome__title">Welcome to Boosted USA</h1>
+          <p class="welcome__text">The Holy Grail of Electric Skateboards and One REVolutionary Scooter</p>
+          <div class="welcome__buttons">
+            <a href="#" class="welcome__button">BOOSTED REVS</a>
+            <a href="#" class="welcome__button">BOOSTED BOARDS</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="page__trademarks trademarks">
+      <div class="trademarks__container container">
+        <ul class="trademarks__list">
+          <li class="trademarks__item">
+            <a href="#" class="trademarks__link">
+              <img src="./img/electrek.svg" alt="Electrek" width="150" height="31">
+            </a>
+          </li>
+          <li class="trademarks__item">
+            <a href="#" class="trademarks__link">
+              <img src="./img/techcrunch.svg" alt="Tech Crunch" width="206" height="48">
+            </a>
+          </li>
+          <li class="trademarks__item">
+            <a href="#" class="trademarks__link">
+              <img src="./img/popular-mechnics.svg" alt="Popular Mechnics" width="150" height="41">
+            </a>
+          </li>
+          <li class="trademarks__item">
+            <a href="#" class="trademarks__link">
+              <img src="./img/wired.svg" alt="Wired" width="158" height="33">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="page__looking-for looking-for">
+      <div class="looking-for__container container">
+        <div class="looking-for__body">
+          <h3 class="looking-for__title">Looking for Boosted Boards, or Boosted Revs?</h3>
+          <p class="looking-for__text">Boosted USA acquired all of the remaining inventory directly from Boosted.
+            This means we have the electric skateboards and scooter you all love and have been looking for. Get
+            your hands on these highly sought after products while supplies last.</p>
+          <div class="looking-for__line"></div>
+        </div>
+        <ul class="looking-for__list">
+          <li class="looking-for__item">
+            <a href="#" class="looking-for__link link-looking-for">
+              <div class="link-looking-for__image">
+                <picture>
+                  <source type="image/webp" srcset="./img/boards@1.webp 1x,
 									  ./img/boards@2.webp 2x">
-									<img src="./img/boards@1.jpg" srcset="./img/boards@1.jpg 1x,
+                  <img src="./img/boards@1.jpg" srcset="./img/boards@1.jpg 1x,
 									./img/boards@2.jpg 2x" alt="Shop Boosted Boards" width="580" height="580">
-								</picture>
-							</div>
-							<div class="link-looking-for__body">
-								<svg class="link-looking-for__icon" width="29" height="47" viewBox="0 0 29 47" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<use xlink:href="./img/sprite.svg#splash"></use>
-								</svg>
-								<p class="link-looking-for__name">Shop Boosted Boards</p>
-								<p class="link-looking-for__text">In Stock</p>
-							</div>
-						</a>
-					</li>
-					<li class="looking-for__item">
-						<a href="#" class="looking-for__link link-looking-for">
-							<div class="link-looking-for__image">
-								<picture>
-									<source type="image/webp" srcset="./img/revs@1.webp 1x,
+                </picture>
+              </div>
+              <div class="link-looking-for__body">
+                <svg class="link-looking-for__icon" width="29" height="47" viewBox="0 0 29 47" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#splash"></use>
+                </svg>
+                <p class="link-looking-for__name">Shop Boosted Boards</p>
+                <p class="link-looking-for__text">In Stock</p>
+              </div>
+            </a>
+          </li>
+          <li class="looking-for__item">
+            <a href="#" class="looking-for__link link-looking-for">
+              <div class="link-looking-for__image">
+                <picture>
+                  <source type="image/webp" srcset="./img/revs@1.webp 1x,
 									  ./img/revs@2.webp 2x">
-									<img src="./img/revs@1.jpg" srcset="./img/revs@1.jpg 1x,
+                  <img src="./img/revs@1.jpg" srcset="./img/revs@1.jpg 1x,
 									./img/revs@2.jpg 2x" alt="Shop Boosted Revs" width="580" height="580">
-								</picture>
-							</div>
-							<div class="link-looking-for__body">
-								<svg class="link-looking-for__icon" width="29" height="47" viewBox="0 0 29 47" fill="none"
-									xmlns="http://www.w3.org/2000/svg">
-									<use xlink:href="./img/sprite.svg#splash"></use>
-								</svg>
-								<p class="link-looking-for__name">Shop Boosted Revs</p>
-								<p class="link-looking-for__text">In Stock</p>
-							</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</section>
-		<section class="page__promo promo">
-			<div class="promo__container container">
-				<div class="promo__image">
-					<picture>
-						<source type="image/webp" srcset="./img/electricskateboards@1.webp 1x,
+                </picture>
+              </div>
+              <div class="link-looking-for__body">
+                <svg class="link-looking-for__icon" width="29" height="47" viewBox="0 0 29 47" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#splash"></use>
+                </svg>
+                <p class="link-looking-for__name">Shop Boosted Revs</p>
+                <p class="link-looking-for__text">In Stock</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="page__promo promo">
+      <div class="promo__container container">
+        <div class="promo__image">
+          <picture>
+            <source type="image/webp" srcset="./img/electricskateboards@1.webp 1x,
 						  ./img/electricskateboards@2.webp 2x">
-						<img src="./img/electricskateboards@1.jpg" srcset="./img/electricskateboards@1.jpg 1x,
+            <img src="./img/electricskateboards@1.jpg" srcset="./img/electricskateboards@1.jpg 1x,
 						./img/electricskateboards@2.jpg 2x" alt="Electric Skateboards" width="1440" height="736">
-					</picture>
-				</div>
-				<div class="promo__body">
-					<p class="promo__slog">High-performance</p>
-					<h3 class="promo__title">Electric Skateboards</h3>
-					<p class="promo__text">Cruising campus, going to work or getting through that long list of errands has
-						never been easier or more fun.</p>
-					<a href="#" class="promo__link">Shop Now</a>
-				</div>
-			</div>
-		</section>
-		<section class="page__stories stories">
-			<div class="stories__container container">
-				<ul class="stories__photos photos-stories">
-					<li class="photos-stories__item">
-						<picture>
-							<source type="image/webp" srcset="./img/boostedrev@1.webp 1x,
+          </picture>
+        </div>
+        <div class="promo__body">
+          <p class="promo__slog">High-performance</p>
+          <h3 class="promo__title">Electric Skateboards</h3>
+          <p class="promo__text">Cruising campus, going to work or getting through that long list of errands has
+            never been easier or more fun.</p>
+          <a href="#" class="promo__link">Shop Now</a>
+        </div>
+      </div>
+    </section>
+    <section class="page__stories stories">
+      <div class="stories__container container">
+        <ul class="stories__photos photos-stories">
+          <li class="photos-stories__item">
+            <picture>
+              <source type="image/webp" srcset="./img/boostedrev@1.webp 1x,
 							  ./img/boostedrev@2.webp 2x">
-							<img src="./img/boostedrev@1.jpg" srcset="./img/boostedrev@1.jpg 1x,
+              <img src="./img/boostedrev@1.jpg" srcset="./img/boostedrev@1.jpg 1x,
 							./img/boostedrev@2.jpg 2x" alt="Boosted Rev" width="380" height="380">
-						</picture>
-					</li>
-					<li class="photos-stories__item">
-						<picture>
-							<source type="image/webp" srcset="./img/boostedrev1@1.webp 1x,
+            </picture>
+          </li>
+          <li class="photos-stories__item">
+            <picture>
+              <source type="image/webp" srcset="./img/boostedrev1@1.webp 1x,
 							  ./img/boostedrev1@2.webp 2x">
-							<img src="./img/boostedrev1@1.jpg" srcset="./img/boostedrev1@1.jpg 1x,
+              <img src="./img/boostedrev1@1.jpg" srcset="./img/boostedrev1@1.jpg 1x,
 							./img/boostedrev1@2.jpg 2x" alt="Boosted Rev" width="380" height="380">
-						</picture>
-					</li>
-				</ul>
-				<div class="stories__body">
-					<article class="stories__article">
-						<h4 class="stories__title">Boosted Rev</h4>
-						<p class="stories__text">There's never been an electric scooter quite like this. Speed past traffic at
-							24 mph. Go up to 22 miles on a single charge. You'll get there in no time at all. Stop and go with
-							the roll of your thumb. Its intuitive design means there’s almost no learning curve.</p>
-					</article>
-					<a href="#" class="stories__link">Shop Now</a>
-				</div>
-			</div>
-		</section>
-		<div class="page__categories categories">
-			<div class="categories__container container">
-				<ul class="categories__list">
-					<li class="categories__item">
-						<a href="#" class="categories__link">
-							<div class="categories__image">
-								<picture>
-									<source type="image/webp" srcset="./img/shop-boosted-stealth@1.webp 1x,
+            </picture>
+          </li>
+        </ul>
+        <div class="stories__body">
+          <article class="stories__article">
+            <h4 class="stories__title">Boosted Rev</h4>
+            <p class="stories__text">There's never been an electric scooter quite like this. Speed past traffic at
+              24 mph. Go up to 22 miles on a single charge. You'll get there in no time at all. Stop and go with
+              the roll of your thumb. Its intuitive design means there’s almost no learning curve.</p>
+          </article>
+          <a href="#" class="stories__link">Shop Now</a>
+        </div>
+      </div>
+    </section>
+    <div class="page__categories categories">
+      <div class="categories__container container">
+        <ul class="categories__list">
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <div class="categories__image">
+                <picture>
+                  <source type="image/webp" srcset="./img/shop-boosted-stealth@1.webp 1x,
 									  ./img/shop-boosted-stealth@2.webp 2x">
-									<img src="./img/shop-boosted-stealth@1.jpg" srcset="./img/shop-boosted-stealth@1.jpg 1x,
+                  <img src="./img/shop-boosted-stealth@1.jpg" srcset="./img/shop-boosted-stealth@1.jpg 1x,
 									./img/shop-boosted-stealth@2.jpg 2x" alt="Shop Boosted Stealth" width="480" height="480">
-								</picture>
-								<div class="categories__body">
-									<p class="categories__name">Shop Boosted Stealth</p>
-									<p class="categories__text">IN STOCK</p>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="categories__item">
-						<a href="#" class="categories__link">
-							<div class="categories__image">
-								<picture>
-									<source type="image/webp" srcset="./img/shop-boosted-plus@1.webp 1x,
+                </picture>
+                <div class="categories__body">
+                  <p class="categories__name">Shop Boosted Stealth</p>
+                  <p class="categories__text">IN STOCK</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <div class="categories__image">
+                <picture>
+                  <source type="image/webp" srcset="./img/shop-boosted-plus@1.webp 1x,
 									  ./img/shop-boosted-plus@2.webp 2x">
-									<img src="./img/shop-boosted-plus@1.jpg" srcset="./img/shop-boosted-plus@1.jpg 1x,
+                  <img src="./img/shop-boosted-plus@1.jpg" srcset="./img/shop-boosted-plus@1.jpg 1x,
 									./img/shop-boosted-plus@2.jpg 2x" alt="Shop Boosted Plus" width="480" height="480">
-								</picture>
-								<div class="categories__body">
-									<p class="categories__name">Shop Boosted Plus</p>
-									<p class="categories__text">IN STOCK</p>
-								</div>
-							</div>
-						</a>
-					</li>
-					<li class="categories__item">
-						<a href="#" class="categories__link">
-							<div class="categories__image">
-								<picture>
-									<source type="image/webp" srcset="./img/shop-boosted-mini@1.webp 1x,
+                </picture>
+                <div class="categories__body">
+                  <p class="categories__name">Shop Boosted Plus</p>
+                  <p class="categories__text">IN STOCK</p>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="categories__item">
+            <a href="#" class="categories__link">
+              <div class="categories__image">
+                <picture>
+                  <source type="image/webp" srcset="./img/shop-boosted-mini@1.webp 1x,
 									  ./img/shop-boosted-mini@2.webp 2x">
-									<img src="./img/shop-boosted-mini@1.jpg" srcset="./img/shop-boosted-mini@1.jpg 1x,
+                  <img src="./img/shop-boosted-mini@1.jpg" srcset="./img/shop-boosted-mini@1.jpg 1x,
 									./img/shop-boosted-mini@2.jpg 2x" alt="Shop Boosted Mini" width="480" height="480">
-								</picture>
-								<div class="categories__body">
-									<p class="categories__name">Shop Boosted Mini</p>
-									<p class="categories__text">IN STOCK</p>
-								</div>
-							</div>
-						</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="page__video-review video-review">
-			<div class="video-review__container container">
-				<ul class="video-review__list">
-					<li class="video-review__item">
-						<div class="video-review__video">
-							<video src="#" poster="./img/video1@1.jpg"></video>
-						</div>
-					</li>
-					<li class="video-review__item">
-						<div class="video-review__video">
-							<video src="#" poster="./img/video2@1.jpg"></video>
-						</div>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<section class="page__offers offers">
-			<div class="offers__container container">
-				<h3 class="offers__title">Looking for Accessories?</h3>
-				<div class="offers__slider slider-offers">
-					<ul class="slider-offers__list">
-						<li class="slider-offers__item">
-							<a href="#" class="slider-offers__link offer-link">
-								<div class="offer-link__image">
-									<picture>
-										<source type="image/webp" srcset="./img/rev-tube@1.webp 1x,
+                </picture>
+                <div class="categories__body">
+                  <p class="categories__name">Shop Boosted Mini</p>
+                  <p class="categories__text">IN STOCK</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="page__video-review video-review">
+      <div class="video-review__container container">
+        <ul class="video-review__list">
+          <li class="video-review__item">
+            <div class="video-review__video">
+              <video src="#" poster="./img/video1@1.jpg"></video>
+            </div>
+          </li>
+          <li class="video-review__item">
+            <div class="video-review__video">
+              <video src="#" poster="./img/video2@1.jpg"></video>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <section class="page__offers offers">
+      <div class="offers__container container">
+        <h3 class="offers__title">Looking for Accessories?</h3>
+        <div class="offers__slider slider-offers swiper">
+          <ul class="slider-offers__list swiper-wrapper">
+            <li class="slider-offers__item swiper-slide">
+              <a href="#" class="slider-offers__link offer-link">
+                <div class="offer-link__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/rev-tube@1.webp 1x,
 								  ./img/rev-tube@2.webp 2x">
-										<img src="./img/rev-tube@1.png" srcset="./img/rev-tube@1.png 1x,
+                    <img src="./img/rev-tube@1.png" srcset="./img/rev-tube@1.png 1x,
 								./img/rev-tube@2.png 2x" alt="Rev Tube" width="186" height="186">
-									</picture>
-								</div>
-								<div class="offer-link__name">
-									Rev Tube
-								</div>
-								<div class="offer-link__price">
-									<span class="offer-link__price--normal">$16.00</span>
-									<span class="offer-link__price--old">$19.00</span>
-									<span class="offer-link__price--sold"></span>
-								</div>
-							</a>
-						</li>
-						<li class="slider-offers__item">
-							<a href="#" class="slider-offers__link offer-link">
-								<div class="offer-link__image">
-									<picture>
-										<source type="image/webp" srcset="./img/boosted-rev-stem-catch@1.webp 1x,
+                  </picture>
+                </div>
+                <div class="offer-link__name">
+                  Rev Tube
+                </div>
+                <div class="offer-link__price">
+                  <span class="offer-link__price--normal">$16.00</span>
+                  <span class="offer-link__price--old">$19.00</span>
+                  <span class="offer-link__price--sold"></span>
+                </div>
+              </a>
+            </li>
+            <li class="slider-offers__item swiper-slide">
+              <a href="#" class="slider-offers__link offer-link">
+                <div class="offer-link__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/boosted-rev-stem-catch@1.webp 1x,
 								  ./img/boosted-rev-stem-catch@2.webp 2x">
-										<img src="./img/boosted-rev-stem-catch@1.png" srcset="./img/boosted-rev-stem-catch@1.png 1x,
+                    <img src="./img/boosted-rev-stem-catch@1.png" srcset="./img/boosted-rev-stem-catch@1.png 1x,
 								./img/boosted-rev-stem-catch@2.png 2x" alt="Boosted Rev Stem Catch" width="186" height="186">
-									</picture>
-								</div>
-								<div class="offer-link__name">
-									Boosted Rev Stem Catch
-								</div>
-								<div class="offer-link__price">
-									<span class="offer-link__price--normal">$19.00</span>
-									<span class="offer-link__price--old">$29.00</span>
-									<span class="offer-link__price--sold"></span>
-								</div>
-							</a>
-						</li>
-						<li class="slider-offers__item">
-							<a href="#" class="slider-offers__link offer-link">
-								<div class="offer-link__image">
-									<picture>
-										<source type="image/webp" srcset="./img/stomp-brake-fender@1.webp 1x,
+                  </picture>
+                </div>
+                <div class="offer-link__name">
+                  Boosted Rev Stem Catch
+                </div>
+                <div class="offer-link__price">
+                  <span class="offer-link__price--normal">$19.00</span>
+                  <span class="offer-link__price--old">$29.00</span>
+                  <span class="offer-link__price--sold"></span>
+                </div>
+              </a>
+            </li>
+            <li class="slider-offers__item swiper-slide">
+              <a href="#" class="slider-offers__link offer-link">
+                <div class="offer-link__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/stomp-brake-fender@1.webp 1x,
 								  ./img/stomp-brake-fender@2.webp 2x">
-										<img src="./img/stomp-brake-fender@1.png" srcset="./img/stomp-brake-fender@1.png 1x,
+                    <img src="./img/stomp-brake-fender@1.png" srcset="./img/stomp-brake-fender@1.png 1x,
 								./img/stomp-brake-fender@2.png 2x" alt="Stomp Brake Fender" width="186" height="186">
-									</picture>
-								</div>
-								<div class="offer-link__name">
-									Stomp Brake Fender
-								</div>
-								<div class="offer-link__price">
-									<span class="offer-link__price--normal"></span>
-									<span class="offer-link__price--old"></span>
-									<span class="offer-link__price--sold">Sold Out</span>
-								</div>
-							</a>
-						</li>
-						<li class="slider-offers__item">
-							<a href="#" class="slider-offers__link offer-link">
-								<div class="offer-link__image">
-									<picture>
-										<source type="image/webp" srcset="./img/boosted-belt-kit@1.webp 1x,
+                  </picture>
+                </div>
+                <div class="offer-link__name">
+                  Stomp Brake Fender
+                </div>
+                <div class="offer-link__price">
+                  <span class="offer-link__price--normal"></span>
+                  <span class="offer-link__price--old"></span>
+                  <span class="offer-link__price--sold">Sold Out</span>
+                </div>
+              </a>
+            </li>
+            <li class="slider-offers__item swiper-slide">
+              <a href="#" class="slider-offers__link offer-link">
+                <div class="offer-link__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/boosted-belt-kit@1.webp 1x,
 								  ./img/boosted-belt-kit@2.webp 2x">
-										<img src="./img/boosted-belt-kit@1.png" srcset="./img/boosted-belt-kit@1.png 1x,
+                    <img src="./img/boosted-belt-kit@1.png" srcset="./img/boosted-belt-kit@1.png 1x,
 								./img/boosted-belt-kit@2.png 2x" alt="Boosted Belt Kit" width="186" height="186">
-									</picture>
-								</div>
-								<div class="offer-link__name">
-									Boosted Belt Kit
-								</div>
-								<div class="offer-link__price">
-									<span class="offer-link__price--normal">$25.00</span>
-									<span class="offer-link__price--old"></span>
-									<span class="offer-link__price--sold"></span>
-								</div>
-							</a>
-						</li>
-						<li class="slider-offers__item">
-							<a href="#" class="slider-offers__link offer-link">
-								<div class="offer-link__image">
-									<picture>
-										<source type="image/webp" srcset="./img/bearing-service-kit@1.webp 1x,
+                  </picture>
+                </div>
+                <div class="offer-link__name">
+                  Boosted Belt Kit
+                </div>
+                <div class="offer-link__price">
+                  <span class="offer-link__price--normal">$25.00</span>
+                  <span class="offer-link__price--old"></span>
+                  <span class="offer-link__price--sold"></span>
+                </div>
+              </a>
+            </li>
+            <li class="slider-offers__item swiper-slide">
+              <a href="#" class="slider-offers__link offer-link">
+                <div class="offer-link__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/bearing-service-kit@1.webp 1x,
 								  ./img/bearing-service-kit@2.webp 2x">
-										<img src="./img/bearing-service-kit@1.png" srcset="./img/bearing-service-kit@1.png 1x,
+                    <img src="./img/bearing-service-kit@1.png" srcset="./img/bearing-service-kit@1.png 1x,
 								./img/bearing-service-kit@2.png 2x" alt="Bearing Service Kit" width="186" height="186">
-									</picture>
-								</div>
-								<div class="offer-link__name">
-									Bearing Service Kit
-								</div>
-								<div class="offer-link__price">
-									<span class="offer-link__price--normal">$50.00</span>
-									<span class="offer-link__price--old"></span>
-									<span class="offer-link__price--sold"></span>
-								</div>
-							</a>
-						</li>
-						<li class="slider-offers__item">
-							<a href="#" class="slider-offers__link offer-link">
-								<div class="offer-link__image">
-									<picture>
-										<source type="image/webp" srcset="./img/boosted-pulley@1.webp 1x,
+                  </picture>
+                </div>
+                <div class="offer-link__name">
+                  Bearing Service Kit
+                </div>
+                <div class="offer-link__price">
+                  <span class="offer-link__price--normal">$50.00</span>
+                  <span class="offer-link__price--old"></span>
+                  <span class="offer-link__price--sold"></span>
+                </div>
+              </a>
+            </li>
+            <li class="slider-offers__item swiper-slide">
+              <a href="#" class="slider-offers__link offer-link">
+                <div class="offer-link__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/boosted-pulley@1.webp 1x,
 								  ./img/boosted-pulley@2.webp 2x">
-										<img src="./img/boosted-pulley@1.png" srcset="./img/boosted-pulley@1.png 1x,
+                    <img src="./img/boosted-pulley@1.png" srcset="./img/boosted-pulley@1.png 1x,
 								./img/boosted-pulley@2.png 2x" alt="Boosted Pulley / Belt Upgrade Kit" width="186" height="186">
-									</picture>
-								</div>
-								<div class="offer-link__name">
-									Boosted Pulley / Belt Upgrade Kit
-								</div>
-								<div class="offer-link__price">
-									<span class="offer-link__price--normal">$75.00</span>
-									<span class="offer-link__price--old"></span>
-									<span class="offer-link__price--sold"></span>
-								</div>
-							</a>
-						</li>
-						<li class="slider-offers__item">
-							<a href="#" class="slider-offers__link offer-link">
-								<div class="offer-link__image">
-									<picture>
-										<source type="image/webp" srcset="./img/boosted-skid-plates@1.webp 1x,
+                  </picture>
+                </div>
+                <div class="offer-link__name">
+                  Boosted Pulley / Belt Upgrade Kit
+                </div>
+                <div class="offer-link__price">
+                  <span class="offer-link__price--normal">$75.00</span>
+                  <span class="offer-link__price--old"></span>
+                  <span class="offer-link__price--sold"></span>
+                </div>
+              </a>
+            </li>
+            <li class="slider-offers__item swiper-slide">
+              <a href="#" class="slider-offers__link offer-link">
+                <div class="offer-link__image">
+                  <picture>
+                    <source type="image/webp" srcset="./img/boosted-skid-plates@1.webp 1x,
 								  ./img/boosted-skid-plates@2.webp 2x">
-										<img src="./img/boosted-skid-plates@1.png" srcset="./img/boosted-skid-plates@1.png 1x,
+                    <img src="./img/boosted-skid-plates@1.png" srcset="./img/boosted-skid-plates@1.png 1x,
 								./img/boosted-skid-plates@2.png 2x" alt="Boosted Skid Plates" width="186" height="186">
-									</picture>
-								</div>
-								<div class="offer-link__name">
-									Boosted Skid Plates
-								</div>
-								<div class="offer-link__price">
-									<span class="offer-link__price--normal">$20.00</span>
-									<span class="offer-link__price--old"></span>
-									<span class="offer-link__price--sold"></span>
-								</div>
-							</a>
-						</li>
-					</ul>
-					<div class="slider-offers__button--left">
-						<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<use xlink:href="./img/sprite.svg#arrow-left"></use>
-						</svg>
-					</div>
-					<div class="slider-offers__button--right">
-						<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<use xlink:href="./img/sprite.svg#arrow-right"></use>
-						</svg>
-					</div>
-				</div>
-			</div>
-			<div class="offers__shadow-block"></div>
-		</section>
-	</main>
+                  </picture>
+                </div>
+                <div class="offer-link__name">
+                  Boosted Skid Plates
+                </div>
+                <div class="offer-link__price">
+                  <span class="offer-link__price--normal">$20.00</span>
+                  <span class="offer-link__price--old"></span>
+                  <span class="offer-link__price--sold"></span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <div class="slider-offers__button--left swiper-button-prev">
+            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#arrow-left"></use>
+            </svg>
+          </div>
+          <div class="slider-offers__button--right swiper-button-next">
+            <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <use xlink:href="./img/sprite.svg#arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="offers__shadow-block"></div>
+      </div>
+    </section>
+    <div class="page__benefits benefits">
+      <div class="benefits__container container">
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <div class="benefits__icon">
+              <img src="./img/go-fast.svg" alt="Go Fast" width="87" height="87">
+            </div>
+            <div class="benefits__name">Go Fast</div>
+            <div class="benefits__text">Boosted is known for its premium performance boards offering a next-level
+              experience.</div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon">
+              <img src="./img/go-far.svg" alt="Go Far" width="87" height="87">
+            </div>
+            <div class="benefits__name">Go Far</div>
+            <div class="benefits__text">With optional extended battery life, you can get wherever you need to go
+              reliably.</div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon">
+              <img src="./img/go-safe.svg" alt="Go Safe" width="87" height="87">
+            </div>
+            <div class="benefits__name">Go Safe</div>
+            <div class="benefits__text">Safety is a #1 priority for Boosted, always wear a helmet when riding.</div>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__icon">
+              <img src="./img/built-to-last.svg" alt="Built to Last!" width="87" height="87">
+            </div>
+            <div class="benefits__name">Built to Last!</div>
+            <div class="benefits__text">Boosted products are engineered to last for years and are extremely reliable.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__top footer-top">
+        <div class="footer-top__container container">
+          <div class="footer-top__logo logo-footer">
+            <a href="#" class="logo-footer__link">
+              <img src="./img/logo-footer.svg" alt="Logo" width="160" height="134">
+            </a>
+          </div>
+          <nav class="footer-top__explore explore-footer">
+            <div class="explore-footer__title">Explore</div>
+            <ul class="explore-footer__list">
+              <li class="explore-footer__item">
+                <a href="#" class="explore-footer__link">Electric Skateboards</a>
+              </li>
+              <li class="explore-footer__item">
+                <a href="#" class="explore-footer__link">Electric Scooters</a>
+              </li>
+              <li class="explore-footer__item">
+                <a href="#" class="explore-footer__link">Accessories</a>
+              </li>
+              <li class="explore-footer__item">
+                <a href="#" class="explore-footer__link">FAQs</a>
+              </li>
+              <li class="explore-footer__item">
+                <a href="#" class="explore-footer__link">Warranty</a>
+              </li>
+              <li class="explore-footer__item">
+                <a href="#" class="explore-footer__link">Quick Start Guide</a>
+              </li>
+              <li class="explore-footer__item">
+                <a href="#" class="explore-footer__link">Contact</a>
+              </li>
+              <li class="explore-footer__item">
+                <a href="#" class="explore-footer__link">Gift Card</a>
+              </li>
+              <li class="explore-footer__item">
+                <a href="#" class="explore-footer__link">Accessibility Statement</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer-top__about about-footer">
+            <div class="about-footer__title">About Boosted USA</div>
+            <p class="about-footer__text">Boosted empowers people everywhere to commute across their cities, campuses,
+              and
+              communities in ways that were never before possible. Boosted is solving one of the biggest problems people
+              face each day: transportation.</p>
+            <div class="about-footer__address">
+              <p class="about-footer__address-text">CaliRides LLC - DBA Boosted USA</p>
+              <p class="about-footer__address-text">1281 Andersen Drive Ste. K</p>
+              <p class="about-footer__address-text">San Rafael, CA 94901</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom footer-bottom">
+        <div class="footer-bottom__container container">
+          <div class="footer-bottom__copyright">
+            © 2021 <span class="footer-bottom__copyright--red">Boosted USA</span>. All Rights Reserved. <span
+              class="footer-bottom__copyright--red">Terms of Service</span>. Built by <span
+              class="footer-bottom__copyright--red">BH</span>
+          </div>
+          <ul class="footer-bottom__cart-list">
+            <li class="footer-bottom__cart-item">
+              <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#cart-pay1"></use>
+              </svg>
+            </li>
+            <li class="footer-bottom__cart-item">
+              <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#cart-pay2"></use>
+              </svg>
+            </li>
+            <li class="footer-bottom__cart-item">
+              <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#cart-pay3"></use>
+              </svg>
+            </li>
+            <li class="footer-bottom__cart-item">
+              <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#cart-pay4"></use>
+              </svg>
+            </li>
+            <li class="footer-bottom__cart-item">
+              <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#cart-pay5"></use>
+              </svg>
+            </li>
+            <li class="footer-bottom__cart-item">
+              <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#cart-pay6"></use>
+              </svg>
+            </li>
+            <li class="footer-bottom__cart-item">
+              <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#cart-pay7"></use>
+              </svg>
+            </li>
+            <li class="footer-bottom__cart-item">
+              <svg width="36" height="22" viewBox="0 0 36 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#cart-pay8"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-	<script src="js/index.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="js/index.js"></script>
 </body>
 
 </html>

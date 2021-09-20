@@ -1,10 +1,10 @@
 .offers {
   .container {
     max-width: none;
-    padding: 0 10px;
+    padding: 0;
   }
 
-  padding: 30px 0 8px 0;
+  padding: 30px 0 28px 0;
   // .offers__container
 
   &__container {
@@ -15,6 +15,7 @@
 
   &__shadow-block {
     height: 40px;
+    margin-top: -15px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 2px 0px 10px rgba(41, 44, 61, 0.34);
   }
@@ -30,7 +31,7 @@
     padding-bottom: 22px;
 
     &::after {
-      content: '';
+      content: "";
       width: 70px;
       border: 1px solid #cfcfcf;
       position: absolute;
@@ -43,22 +44,20 @@
   // .offers__slider
 
   &__slider {
+    margin: 0 auto;
   }
 }
 
 .slider-offers {
+  max-width: 1420px;
+  position: relative;
   // .slider-offers__list
 
   &__list {
     display: flex;
-    width: 100%;
     justify-content: space-between;
-    justify-items: center;
+    justify-self: center;
     align-items: center;
-
-    & > *:not(:last-child) {
-      margin-right: 20px;
-    }
   }
 
   // .slider-offers__item
@@ -73,12 +72,33 @@
 
   // .slider-offers__button--left
 
+  &__button--left,
+  &__button--right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
   &__button--left {
+    left: 0;
   }
 
   // .slider-offers__button--right
 
   &__button--right {
+    right: 0;
   }
 }
 .offer-link {
@@ -90,15 +110,19 @@
     margin-bottom: 5px;
   }
 
+  &:hover {
+    opacity: 0.7;
+  }
+
   // .offer-link__image
 
   &__image {
+    flex: 0 0 186px;
   }
 
   // .offer-link__name
 
   &__name {
-    justify-self: flex-end;
     max-width: 140px;
     line-height: 18/15 * 100%;
     text-align: center;
@@ -129,10 +153,5 @@
   &__price--sold {
     line-height: 15/18 * 100%;
     color: rgba(0, 0, 0, 0.3);
-  }
-
-  // .offer-link__price--uppgrade
-
-  &__price--uppgrade {
   }
 }
