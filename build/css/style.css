@@ -121,13 +121,14 @@ body {
         align-items: center;
         top: 3px;
         right: 100px;
-        transition: rotate 2s ease 0.3s; }
+        transition: rotate 2s ease 0.3s;
+        cursor: pointer; }
         .nav-header__icon::before, .nav-header__icon::after,
         .nav-header__icon span {
           width: 100%;
           border: 1px solid #000; }
         .nav-header__icon::before, .nav-header__icon::after {
-          content: '';
+          content: "";
           position: absolute;
           transition: transform 0.2s ease; }
         .nav-header__icon::before {
